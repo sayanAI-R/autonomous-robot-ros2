@@ -1,87 +1,96 @@
-# Autonomous Robot ROS2 🤖
+# Autonomous Mobile Robot Simulation with ROS 2 🤖
 
 ## Overview
 
-This project focuses on the design and simulation of an autonomous mobile robot using ROS 2.  
-The robot is developed in a simulated environment and aims to achieve autonomous navigation through mapping, localization, and path planning.
+This project focuses on the design and simulation of an autonomous mobile robot using **ROS 2**.
 
-The project explores key concepts in autonomous robotics including SLAM, sensor integration, localization, and navigation using ROS 2.
+The robot is developed and tested in a simulated environment with the goal of achieving autonomous navigation through **mapping, localization, and path planning**.
 
----
+The project explores key concepts in autonomous robotics, including ROS 2 communication, sensor integration, SLAM, localization, and autonomous navigation.
 
 ## Project Goals
 
-- Develop an autonomous mobile robot simulation
-- Implement ROS 2 communication architecture
-- Integrate robot sensors for environment perception
-- Perform mapping and localization
-- Enable autonomous navigation in a simulated environment
-
----
+* Develop an autonomous mobile robot simulation
+* Implement a ROS 2 node-based communication architecture
+* Integrate sensors for environment perception
+* Perform environment mapping and robot localization
+* Implement autonomous navigation and path planning
+* Explore sensor fusion and probabilistic localization techniques
 
 ## Technologies
 
-- ROS 2
-- Gazebo Simulator
-- RViz Visualization
-- Navigation2 (Nav2)
-- SLAM Toolbox
-- Python
-- C++
-
----
+* ROS 2
+* Gazebo
+* RViz
+* Navigation2 (Nav2)
+* SLAM Toolbox
+* Python
+* C++
 
 ## System Features
 
-Planned features:
+### Planned Features
 
-- ROS 2 node-based robot architecture
-- LiDAR sensor integration
-- Odometry processing
-- Occupancy Grid Mapping
-- SLAM-based environment mapping
-- Robot localization using AMCL
-- Autonomous navigation using Nav2
-
----
+* ROS 2 node-based robot architecture
+* LiDAR sensor integration
+* Wheel odometry processing
+* Occupancy Grid Mapping
+* SLAM-based environment mapping
+* Robot localization using AMCL
+* Autonomous navigation using Navigation2
+* Sensor fusion
 
 ## Project Structure
 
----
+```text
+autonomous-robot-ros2/
+│
+├── ros2_ws/
+│   └── src/
+│       └── autonomous_robot/
+│
+├── docs/
+├── config/
+├── worlds/
+├── models/
+├── maps/
+└── scripts/
+```
 
 ## Simulation Environment
 
-The robot will be developed and tested in a Gazebo simulation environment using ROS 2 tools.
+The robot will be developed and tested in a simulated environment using **Gazebo** and ROS 2 tools.
 
-The simulation includes:
-- Robot model
-- Sensors
-- Virtual environment
-- Navigation system
+The simulation will include:
 
----
+* Autonomous mobile robot model
+* LiDAR and other simulated sensors
+* Virtual environments
+* Odometry and localization
+* Mapping and navigation systems
 
 ## Project Status
 
-🚧 Currently under development
+🚧 **Currently under development**
 
-Future implementations:
-- SLAM integration
-- Autonomous navigation
-- Sensor fusion
-- Computer vision capabilities
+### Planned Implementations
 
----
+* [ ] Gazebo robot simulation
+* [ ] Sensor integration
+* [ ] Odometry processing
+* [ ] SLAM and mapping
+* [ ] Localization
+* [ ] Autonomous navigation
+* [ ] Sensor fusion
+* [ ] Computer vision integration
 
 ## Documentation
 
-Detailed project documentation, references, and reports will be added in:
-
----
+Project documentation, references, and technical reports will be added to the `docs/` directory.
 
 ## References
 
-- ROS 2 Documentation
-- Navigation2 Documentation
-- SLAM Toolbox Documentation
-- Probabilistic Robotics - Thrun, Burgard, Fox
+* ROS 2 Documentation
+* Navigation2 Documentation
+* SLAM Toolbox Documentation
+* Thrun, Burgard, and Fox — *Probabilistic Robotics*
