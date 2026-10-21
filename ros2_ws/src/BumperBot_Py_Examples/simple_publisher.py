@@ -8,9 +8,13 @@ class SimplePublisher(Node):
         super().__init__("simple_publisher")
         self.pub = self.create_publisher(String, "chatter", 10)
         self.counter = 0
-        self.frequency = 1.0
-        self.get_logger().info("Publishing at %d Hz" % self.frequency)
-        self.timer = self.create_timer(self.frequency, self.timerCallback)
+        self.timer_period = 1.0
+        frequency_hz = 1.0 / self.timer_period
+        self.get_logger().info("Publishing at %.1f Hz" % frequency_hz)
+        self.timer = self.create_timer(
+            self.timer_period,
+            self.timerCallback
+        )
 
     def timerCallback(self):
         msg = String()
