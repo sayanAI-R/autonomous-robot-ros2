@@ -11,10 +11,7 @@ class SimplePublisher(Node):
         self.timer_period = 1.0
         frequency_hz = 1.0 / self.timer_period
         self.get_logger().info("Publishing at %.1f Hz" % frequency_hz)
-        self.timer = self.create_timer(
-            self.timer_period,
-            self.timerCallback
-        )
+        self.timer = self.create_timer(self.timer_period, self.timerCallback)
 
     def timerCallback(self):
         msg = String()
